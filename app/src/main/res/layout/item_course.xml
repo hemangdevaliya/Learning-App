@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:foregroundTint="#FFFFFF">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="388dp"
+        android:layout_height="190dp"
+        android:layout_centerInParent="true"
+        app:cardBackgroundColor="#FEF9F8"
+        app:cardCornerRadius="35dp"
+        app:cardElevation="15dp">
+
+        <RelativeLayout
+            android:layout_width="390dp"
+            android:layout_height="197dp"
+            android:backgroundTint="#FDFDFD"
+            android:padding="16dp">
+
+            <!-- First TextView -->
+            <TextView
+                android:id="@+id/courseNameTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Text View 1"
+                android:textColor="#3F51B5"
+                android:textSize="16sp" />
+
+            <!-- Second TextView -->
+            <TextView
+                android:id="@+id/TopicNameTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/courseNameTextView"
+                android:layout_marginBottom="8dp"
+                android:text="Text View 2"
+                android:textColor="#FD7A7A"
+                android:textSize="14sp" />
+
+            <!-- Third TextView -->
+            <TextView
+                android:id="@+id/TopicDesscriptionTextView"
+                android:layout_width="359dp"
+                android:layout_height="113dp"
+                android:layout_below="@+id/TopicNameTextView"
+                android:text="Text View 3"
+                android:textColor="#2B2B2B"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
